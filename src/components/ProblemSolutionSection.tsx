@@ -51,7 +51,16 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
         
         <div className="max-w-6xl mx-auto mt-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Text and CTA on the left */}
+            {/* Image on the left */}
+            <div>
+              <img 
+                src={shed1} 
+                alt="Tinglado industrial construido" 
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            
+            {/* Text and CTA on the right */}
             <div className="space-y-6">
               <p className="text-lg text-brand-gray leading-relaxed">
                 Muchas industrias y empresas pierden productividad por no contar con la estructura adecuada. 
@@ -70,15 +79,6 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
               >
                 Solicitar ahora
               </Button>
-            </div>
-            
-            {/* Image on the right */}
-            <div>
-              <img 
-                src={shed1} 
-                alt="Tinglado industrial construido" 
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
-              />
             </div>
           </div>
         </div>
