@@ -121,58 +121,26 @@ All colors MUST be HSL.
 }
 
 @layer components {
-  .hexagon {
-    width: 60px;
-    height: 60px;
-    background: hsl(var(--brand-blue));
-    margin: 30px 0;
-    position: relative;
-    display: inline-block;
-  }
-
-  .hexagon:before,
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-  }
-
-  .hexagon:before {
-    bottom: 100%;
-    border-bottom: 15px solid hsl(var(--brand-blue));
-  }
-
-  .hexagon:after {
-    top: 100%;
-    border-top: 15px solid hsl(var(--brand-blue));
-  }
-
-  .hexagon-small {
-    width: 30px;
-    height: 30px;
-    margin: 15px 0;
-  }
-
-  .hexagon-small:before,
-  .hexagon-small:after {
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-  }
-
-  .hexagon-small:before {
-    border-bottom: 7.5px solid hsl(var(--brand-blue));
-  }
-
-  .hexagon-small:after {
-    border-top: 7.5px solid hsl(var(--brand-blue));
-  }
-
-  .hexagon-pattern {
+  /* Square pattern styles */
+  .square-pattern {
     background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--brand-blue) / 0.05) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(var(--brand-blue) / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 25% 25%, rgba(128, 128, 128, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(128, 128, 128, 0.1) 0%, transparent 50%);
     background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+  }
+
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 8px;
+  }
+
+  .square-small {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 4px;
   }
 }

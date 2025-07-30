@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CheckCircle, Zap, Settings } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 interface BenefitsSectionProps {
@@ -8,17 +9,17 @@ interface BenefitsSectionProps {
 const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
   const benefits = [
     {
-      icon: "⚡",
+      icon: Zap,
       title: "Inicio inmediato",
       description: "Ejecutamos obras sin demoras, gracias a capital propio."
     },
     {
-      icon: "🔧",
+      icon: Settings,
       title: "Obras llave en mano",
       description: "No te preocupés por la gestión, nosotros nos encargamos de todo."
     },
     {
-      icon: "🔄",
+      icon: CheckCircle,
       title: "Sin interrupciones",
       description: "Trabajamos en contraturno sin frenar tu producción."
     }
@@ -26,9 +27,9 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
 
   return (
     <section className="py-20 bg-brand-gray-light relative overflow-hidden">
-      {/* Background hexagons */}
-      <div className="absolute top-20 left-20 hexagon opacity-10"></div>
-      <div className="absolute bottom-10 right-10 hexagon-small opacity-15"></div>
+      {/* Background squares */}
+      <div className="absolute top-20 left-20 square opacity-10"></div>
+      <div className="absolute bottom-10 right-10 square-small opacity-15"></div>
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
@@ -41,8 +42,10 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
           {benefits.map((benefit, index) => (
             <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="text-center">
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <div className="hexagon-small mx-auto mb-4 opacity-80"></div>
+                <div className="flex justify-center mb-4">
+                  <benefit.icon size={48} className="text-brand-blue" strokeWidth={2} />
+                </div>
+                <div className="square-small mx-auto mb-4 opacity-80"></div>
                 <h3 className="text-xl font-bold text-brand-gray-dark mb-4">
                   ✅ {benefit.title}
                 </h3>
