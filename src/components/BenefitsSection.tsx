@@ -26,7 +26,7 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
   ];
 
   return (
-    <section className="py-20 bg-brand-gray-light relative overflow-hidden">
+    <section className="py-20 bg-brand-blue relative overflow-hidden">
       {/* Background squares */}
       <div className="absolute top-20 left-20 square opacity-10"></div>
       <div className="absolute bottom-10 right-10 square-small opacity-15"></div>
