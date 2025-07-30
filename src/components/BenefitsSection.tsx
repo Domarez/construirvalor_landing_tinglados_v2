@@ -33,7 +33,7 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-brand-gray-dark mb-8">
+          <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-gray-dark mb-8">
             Beneficios destacados
           </h2>
         </div>
@@ -43,7 +43,7 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
             <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="text-center">
                 <div className="flex justify-center mb-4">
-                  <benefit.icon size={24} className="text-brand-gray" strokeWidth={1.5} />
+                  <benefit.icon size={36} className="text-brand-gray" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-xl font-bold text-brand-gray-dark mb-4">
                   ✅ {benefit.title}

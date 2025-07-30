@@ -39,7 +39,7 @@ const ServicesSection = ({ onCTAClick }: ServicesSectionProps) => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-brand-gray-dark mb-8">
+          <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-gray-dark mb-8">
             Productos / Servicios
           </h2>
         </div>
@@ -49,7 +49,7 @@ const ServicesSection = ({ onCTAClick }: ServicesSectionProps) => {
             <Card key={index} className={`p-8 bg-gradient-to-br ${service.gradient} shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-brand-blue/20`}>
               <div className="text-center h-full flex flex-col">
                 <div className="flex justify-center mb-6">
-                  <service.icon size={24} className="text-brand-gray" strokeWidth={1.5} />
+                  <service.icon size={36} className="text-brand-gray" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-2xl font-bold text-brand-gray-dark mb-4">
                   {service.title}

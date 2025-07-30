@@ -38,7 +38,7 @@ const WhyChooseUsSection = ({ onCTAClick }: WhyChooseUsSectionProps) => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold text-brand-gray-dark mb-8">
+          <h2 className="text-3xl md:text-4xl font-inter font-light text-brand-gray-dark mb-8">
             ¿Por qué elegirnos?
           </h2>
         </div>
@@ -47,7 +47,7 @@ const WhyChooseUsSection = ({ onCTAClick }: WhyChooseUsSectionProps) => {
           {reasons.map((reason, index) => (
             <Card key={index} className="p-6 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center">
                <div className="flex justify-center mb-4">
-                 <reason.icon size={20} className="text-brand-gray" strokeWidth={1.5} />
+                 <reason.icon size={30} className="text-brand-gray" strokeWidth={1.5} />
                </div>
               <h3 className="text-lg font-bold text-brand-gray-dark mb-3">
                 {reason.title}
