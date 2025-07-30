@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -10,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     clientType: "",
     serviceType: "",
@@ -39,24 +41,8 @@ const ContactForm = () => {
     // Here you would typically send the form data to your backend
     console.log("Form submitted:", formData);
     
-    toast({
-      title: "¡Formulario enviado!",
-      description: "Nos contactaremos contigo en las próximas horas.",
-    });
-    
-    // Reset form
-    setFormData({
-      clientType: "",
-      serviceType: "",
-      sector: "",
-      location: "",
-      size: "",
-      role: "",
-      name: "",
-      phone: "",
-      email: "",
-      contactPreference: ""
-    });
+    // Redirect to thank you page
+    navigate("/thank-you");
   };
 
   return (
