@@ -46,9 +46,9 @@ const WhyChooseUsSection = ({ onCTAClick }: WhyChooseUsSectionProps) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {reasons.map((reason, index) => (
             <Card key={index} className="p-6 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-center">
-              <div className="flex justify-center mb-4">
-                <reason.icon size={32} className="text-brand-blue" strokeWidth={0} />
-              </div>
+               <div className="flex justify-center mb-4">
+                 <reason.icon size={32} style={{ color: '#6684ff' }} strokeWidth={2} />
+               </div>
               <h3 className="text-lg font-bold text-brand-gray-dark mb-3">
                 {reason.title}
               </h3>

@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
-import industrialWarehouse from "@/assets/industrial-warehouse.jpg";
+import shed1 from "@/assets/shed-1.jpg";
+import shed2 from "@/assets/shed-2.jpg";
+import shed3 from "@/assets/shed-3.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -7,19 +9,22 @@ const TestimonialsSection = () => {
       text: "Necesitábamos construir un tinglado de 300m2 en el Parque Industrial de Ezeiza lo antes posible y en 60 días lo resolvieron.",
       author: "Cliente Industrial",
       project: "300m² - Parque Industrial Ezeiza",
-      logo: "🏭"
+      logo: "🏭",
+      image: shed1
     },
     {
       text: "Nuestro gimnasio del campo de deportes de San Justo nos quedó chico y necesitábamos una ampliación. Contactamos a Construir Valor y en tan solo 15 días nos agregaron 150m2 de cubierta.",
       author: "Colegio Nuestra Señora de la Misericordia",
       project: "Ampliación 150m² - San Justo",
-      logo: "🏫"
+      logo: "🏫",
+      image: shed2
     },
     {
       text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
       author: "Club Atlético San Isidro (CASI)",
       project: "670m² - Nuevo Gimnasio",
-      logo: "⚽"
+      logo: "⚽",
+      image: shed3
     }
   ];
 
@@ -31,13 +36,6 @@ const TestimonialsSection = () => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="mb-8">
-            <img 
-              src={industrialWarehouse} 
-              alt="Industrial warehouse" 
-              className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
-            />
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-brand-gray-dark mb-8">
             Nuestros clientes
           </h2>
@@ -46,6 +44,15 @@ const TestimonialsSection = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 relative">
+              {/* Shed image */}
+              <div className="mb-6">
+                <img 
+                  src={testimonial.image} 
+                  alt="Shed project" 
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+              </div>
+              
               {/* Quote mark */}
               <div className="absolute top-4 right-4 text-6xl text-brand-blue/20 font-serif">"</div>
               

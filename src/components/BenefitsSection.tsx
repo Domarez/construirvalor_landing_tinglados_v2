@@ -43,7 +43,7 @@ const BenefitsSection = ({ onCTAClick }: BenefitsSectionProps) => {
             <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="text-center">
                 <div className="flex justify-center mb-4">
-                  <benefit.icon size={48} className="text-brand-blue" strokeWidth={0} />
+                  <benefit.icon size={48} style={{ color: '#6684ff' }} strokeWidth={2} />
                 </div>
                 <h3 className="text-xl font-bold text-brand-gray-dark mb-4">
                   ✅ {benefit.title}
