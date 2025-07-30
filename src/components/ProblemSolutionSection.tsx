@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import shed1 from "@/assets/shed-1.jpg";
 
 interface ProblemSolutionSectionProps {
   onCTAClick: () => void;
@@ -54,7 +53,7 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
             {/* Image on the left */}
             <div>
               <img 
-                src={shed1} 
+                src="/lovable-uploads/09c0e752-f928-416a-af55-509309c9f481.png" 
                 alt="Tinglado industrial construido" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
