@@ -1,5 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import shed1 from "@/assets/shed-1.jpg";
 
 interface ProblemSolutionSectionProps {
   onCTAClick: () => void;
@@ -49,6 +51,15 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
         
         <div className="max-w-4xl mx-auto mt-16 text-center">
           <div className="bg-gradient-to-r from-brand-gray-light to-background p-8 rounded-2xl shadow-lg">
+            {/* Shed photo */}
+            <div className="mb-6">
+              <img 
+                src={shed1} 
+                alt="Tinglado industrial construido" 
+                className="w-full h-64 object-cover rounded-lg shadow-md"
+              />
+            </div>
+            
             <p className="text-lg text-brand-gray mb-8 leading-relaxed">
               Muchas industrias y empresas pierden productividad por no contar con la estructura adecuada. 
               Un tinglado bien diseñado puede ampliar tu área operativa, proteger tu producción y reducir tiempos logísticos.
