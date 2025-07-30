@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     text: "Nuestro gimnasio del campo de deportes de San Justo nos quedó chico y necesitábamos una ampliación. Contactamos a Construir Valor y en tan solo 15 días nos agregaron 150m2 de cubierta.",
     author: "Colegio Nuestra Señora de la Misericordia",
     project: "Ampliación 150m² - San Justo",
-    logo: "🏫",
+    logo: "/lovable-uploads/aa1298d5-331c-4fd1-9a64-38350bc7715d.png",
     image: shed2
   }, {
     text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
