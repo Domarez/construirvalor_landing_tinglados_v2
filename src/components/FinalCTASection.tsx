@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
-
 interface FinalCTASectionProps {
   onCTAClick: () => void;
 }
-
-const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
-  return (
-    <section className="py-20 bg-gradient-to-br from-brand-blue to-brand-blue/80 relative overflow-hidden">
+const FinalCTASection = ({
+  onCTAClick
+}: FinalCTASectionProps) => {
+  return <section className="py-20 bg-gradient-to-br from-brand-blue to-brand-blue/80 relative overflow-hidden">
       {/* Background hexagons */}
       <div className="absolute top-10 left-10 hexagon opacity-20"></div>
       <div className="absolute bottom-10 right-10 hexagon-small opacity-30"></div>
@@ -14,7 +13,7 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
+          <h2 className="text-4xl md:text-5xl text-white mb-8 leading-tight font-bold">
             ¿Listo para optimizar tus espacios y aumentar tu productividad?
           </h2>
           
@@ -22,12 +21,7 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
             Cotizá hoy mismo tu tinglado.
           </p>
           
-          <Button 
-            onClick={onCTAClick}
-            size="lg"
-            variant="secondary"
-            className="bg-white text-brand-blue hover:bg-white/90 px-12 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 font-bold"
-          >
+          <Button onClick={onCTAClick} size="lg" variant="secondary" className="bg-white text-brand-blue hover:bg-white/90 px-12 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 font-bold">
             Solicitar cotización gratuita
           </Button>
           
@@ -48,8 +42,6 @@ const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FinalCTASection;
