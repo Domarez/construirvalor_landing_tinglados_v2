@@ -49,34 +49,37 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
           </Card>
         </div>
         
-        <div className="max-w-4xl mx-auto mt-16 text-center">
-          <div className="bg-gradient-to-r from-brand-gray-light to-background p-8 rounded-2xl shadow-lg">
-            {/* Shed photo */}
-            <div className="mb-6">
+        <div className="max-w-6xl mx-auto mt-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Text and CTA on the left */}
+            <div className="space-y-6">
+              <p className="text-lg text-brand-gray leading-relaxed">
+                Muchas industrias y empresas pierden productividad por no contar con la estructura adecuada. 
+                Un tinglado bien diseñado puede ampliar tu área operativa, proteger tu producción y reducir tiempos logísticos.
+              </p>
+              
+              <p className="text-lg text-brand-gray leading-relaxed">
+                En Construir Valor diseñamos y ejecutamos tinglados a medida, optimizados para cada tipo de operación 
+                industrial o comercial. Cumplimos con todos los requisitos legales y comenzamos rápido, sin complicarte.
+              </p>
+              
+              <Button 
+                onClick={onCTAClick}
+                size="lg"
+                className="bg-brand-blue hover:bg-brand-blue/90 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Solicitar ahora
+              </Button>
+            </div>
+            
+            {/* Image on the right */}
+            <div>
               <img 
                 src={shed1} 
                 alt="Tinglado industrial construido" 
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
-            
-            <p className="text-lg text-brand-gray mb-8 leading-relaxed">
-              Muchas industrias y empresas pierden productividad por no contar con la estructura adecuada. 
-              Un tinglado bien diseñado puede ampliar tu área operativa, proteger tu producción y reducir tiempos logísticos.
-            </p>
-            
-            <p className="text-lg text-brand-gray mb-8 leading-relaxed">
-              En Construir Valor diseñamos y ejecutamos tinglados a medida, optimizados para cada tipo de operación 
-              industrial o comercial. Cumplimos con todos los requisitos legales y comenzamos rápido, sin complicarte.
-            </p>
-            
-            <Button 
-              onClick={onCTAClick}
-              size="lg"
-              className="bg-brand-blue hover:bg-brand-blue/90 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Solicitar ahora
-            </Button>
           </div>
         </div>
       </div>
