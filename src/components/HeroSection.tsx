@@ -38,7 +38,7 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
           </div>
           
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-light text-brand-gray-dark mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-regular text-brand-gray-dark mb-8 leading-tight">
             Construcción de 
             <span className="text-brand-blue">Tinglados{" "} a Medida</span> para Empresas
           </h1>
