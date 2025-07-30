@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
     text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
     author: "Club Atlético San Isidro (CASI)",
     project: "670m² - Nuevo Gimnasio",
-    logo: "⚽",
+    logo: "/lovable-uploads/82689102-e97b-4e02-b623-561bd30a4f11.png",
     image: shed3
   }];
   return <section className="py-20 bg-brand-gray-light relative overflow-hidden">
@@ -51,7 +51,11 @@ const TestimonialsSection = () => {
                 
                 <div className="border-t border-brand-blue/20 pt-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-2xl">{testimonial.logo}</span>
+                    {testimonial.logo.startsWith('/') ? (
+                      <img src={testimonial.logo} alt={testimonial.author} className="w-8 h-8 object-contain" />
+                    ) : (
+                      <span className="text-2xl">{testimonial.logo}</span>
+                    )}
                     <p className="font-bold text-brand-gray-dark">
                       {testimonial.author}
                     </p>
