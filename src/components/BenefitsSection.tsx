@@ -20,7 +20,7 @@ const BenefitsSection = ({
     title: "Sin interrupciones",
     description: "Trabajamos en contraturno sin frenar tu producción."
   }];
-  return <section className="py-20 bg-brand-gray-light relative overflow-hidden">
+  return <section className="py-20 bg-brand-blue relative overflow-hidden">
       {/* Background squares */}
       <div className="absolute top-20 left-20 square opacity-10"></div>
       <div className="absolute bottom-10 right-10 square-small opacity-15"></div>
