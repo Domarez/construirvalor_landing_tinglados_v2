@@ -28,16 +28,11 @@ const HeroSection = ({ onCTAClick }: HeroSectionProps) => {
           <div className="mb-8">
             <div className="text-center">
               <div className="inline-block bg-white px-6 py-3 rounded-lg shadow-lg mb-4">
-                <div className="text-2xl font-bold">
-                  <span className="text-gray-800">CONSTRUIR</span>
-                  <br />
-                  <span className="text-gray-800">VALOR</span>
-                  <div className="flex items-center justify-center mt-1">
-                    <div className="w-8 h-1 bg-orange-500 mr-1"></div>
-                    <div className="w-0 h-0 border-l-8 border-l-gray-600 border-t-4 border-t-transparent border-b-4 border-b-transparent"></div>
-                    <div className="text-orange-500 font-bold text-lg ml-1">V</div>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/7b6c504c-84dd-45e1-8d0f-25ae78a5da55.png" 
+                  alt="Construir Valor" 
+                  className="h-16 w-auto"
+                />
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const ServicesSection = ({ onCTAClick }: ServicesSectionProps) => {
             <Card key={index} className={`p-8 bg-gradient-to-br ${service.gradient} shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-brand-blue/20`}>
               <div className="text-center h-full flex flex-col">
                 <div className="flex justify-center mb-6">
-                  <service.icon size={48} className="text-brand-blue" strokeWidth={2} />
+                  <service.icon size={48} className="text-brand-blue" strokeWidth={0} />
                 </div>
                 <h3 className="text-2xl font-bold text-brand-gray-dark mb-4">
                   {service.title}

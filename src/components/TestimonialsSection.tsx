@@ -1,21 +1,25 @@
 import { Card } from "@/components/ui/card";
+import industrialWarehouse from "@/assets/industrial-warehouse.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       text: "Necesitábamos construir un tinglado de 300m2 en el Parque Industrial de Ezeiza lo antes posible y en 60 días lo resolvieron.",
       author: "Cliente Industrial",
-      project: "300m² - Parque Industrial Ezeiza"
+      project: "300m² - Parque Industrial Ezeiza",
+      logo: "🏭"
     },
     {
       text: "Nuestro gimnasio del campo de deportes de San Justo nos quedó chico y necesitábamos una ampliación. Contactamos a Construir Valor y en tan solo 15 días nos agregaron 150m2 de cubierta.",
       author: "Colegio Nuestra Señora de la Misericordia",
-      project: "Ampliación 150m² - San Justo"
+      project: "Ampliación 150m² - San Justo",
+      logo: "🏫"
     },
     {
       text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
       author: "Club Atlético San Isidro (CASI)",
-      project: "670m² - Nuevo Gimnasio"
+      project: "670m² - Nuevo Gimnasio",
+      logo: "⚽"
     }
   ];
 
@@ -27,6 +31,13 @@ const TestimonialsSection = () => {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="mb-8">
+            <img 
+              src={industrialWarehouse} 
+              alt="Industrial warehouse" 
+              className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+            />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-brand-gray-dark mb-8">
             Nuestros clientes
           </h2>
@@ -44,9 +55,12 @@ const TestimonialsSection = () => {
                 </p>
                 
                 <div className="border-t border-brand-blue/20 pt-4">
-                  <p className="font-bold text-brand-gray-dark">
-                    {testimonial.author}
-                  </p>
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="text-2xl">{testimonial.logo}</span>
+                    <p className="font-bold text-brand-gray-dark">
+                      {testimonial.author}
+                    </p>
+                  </div>
                   <p className="text-sm text-brand-blue font-medium">
                     {testimonial.project}
                   </p>
