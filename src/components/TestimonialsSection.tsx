@@ -2,34 +2,27 @@ import { Card } from "@/components/ui/card";
 import shed1 from "@/assets/shed-1.jpg";
 import shed2 from "@/assets/shed-2.jpg";
 import shed3 from "@/assets/shed-3.jpg";
-
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      text: "Necesitábamos construir un tinglado de 300m2 en el Parque Industrial de Ezeiza lo antes posible y en 60 días lo resolvieron.",
-      author: "Cliente Industrial",
-      project: "300m² - Parque Industrial Ezeiza",
-      logo: "🏭",
-      image: shed1
-    },
-    {
-      text: "Nuestro gimnasio del campo de deportes de San Justo nos quedó chico y necesitábamos una ampliación. Contactamos a Construir Valor y en tan solo 15 días nos agregaron 150m2 de cubierta.",
-      author: "Colegio Nuestra Señora de la Misericordia",
-      project: "Ampliación 150m² - San Justo",
-      logo: "🏫",
-      image: shed2
-    },
-    {
-      text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
-      author: "Club Atlético San Isidro (CASI)",
-      project: "670m² - Nuevo Gimnasio",
-      logo: "⚽",
-      image: shed3
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-brand-gray-light relative overflow-hidden">
+  const testimonials = [{
+    text: "Necesitábamos construir un tinglado de 300m2 en el Parque Industrial de Ezeiza lo antes posible y en 60 días lo resolvieron.",
+    author: "Cliente Industrial",
+    project: "300m² - Parque Industrial Ezeiza",
+    logo: "🏭",
+    image: shed1
+  }, {
+    text: "Nuestro gimnasio del campo de deportes de San Justo nos quedó chico y necesitábamos una ampliación. Contactamos a Construir Valor y en tan solo 15 días nos agregaron 150m2 de cubierta.",
+    author: "Colegio Nuestra Señora de la Misericordia",
+    project: "Ampliación 150m² - San Justo",
+    logo: "🏫",
+    image: shed2
+  }, {
+    text: "Necesitábamos un gimnasio nuevo y rápido, nos construyeron un tinglado de 670 m2 en 2 meses.",
+    author: "Club Atlético San Isidro (CASI)",
+    project: "670m² - Nuevo Gimnasio",
+    logo: "⚽",
+    image: shed3
+  }];
+  return <section className="py-20 bg-brand-gray-light relative overflow-hidden">
       {/* Background hexagons */}
       <div className="absolute top-10 right-20 hexagon opacity-10"></div>
       <div className="absolute bottom-10 left-20 hexagon-small opacity-15"></div>
@@ -42,15 +35,10 @@ const TestimonialsSection = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 relative">
+          {testimonials.map((testimonial, index) => <Card key={index} className="p-8 bg-card shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 relative">
               {/* Shed image */}
               <div className="mb-6">
-                <img 
-                  src={testimonial.image} 
-                  alt="Shed project" 
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+                <img src={testimonial.image} alt="Shed project" className="w-full h-48 object-cover rounded-lg" />
               </div>
               
               {/* Quote mark */}
@@ -73,24 +61,21 @@ const TestimonialsSection = () => {
                   </p>
                 </div>
               </div>
-            </Card>
-          ))}
+            </Card>)}
         </div>
         
         {/* Trust indicator */}
-        <div className="text-center bg-gradient-to-r from-brand-blue/10 to-brand-blue/20 p-8 rounded-2xl shadow-lg">
+        <div className="text-center bg-gradient-to-r from-brand-blue/10 to-brand-blue/20 p-8 rounded-2xl shadow-lg bg-slate-600">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="hexagon-small"></div>
-            <span className="text-2xl">🔒</span>
+            
             <div className="hexagon-small"></div>
           </div>
-          <p className="text-xl font-bold text-brand-gray-dark">
+          <p className="text-brand-gray-dark text-slate-50 font-normal text-2xl">
             Ya ayudamos a +100 empresas a construir estructuras que potencian su operación.
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialsSection;
