@@ -51,7 +51,7 @@ const ServicesSection = ({ onCTAClick }: ServicesSectionProps) => {
                 <div className="flex justify-center mb-6">
                   <service.icon size={36} className="text-brand-gray" strokeWidth={1.5} />
                 </div>
-                <h3 className="text-2xl font-bold text-brand-gray-dark mb-4">
+                <h3 className="text-2xl font-regular font-inter text-brand-gray-dark mb-4">
                   {service.title}
                 </h3>
                 <p className="text-brand-gray mb-8 leading-relaxed flex-grow">

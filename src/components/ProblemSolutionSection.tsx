@@ -14,7 +14,7 @@ const ProblemSolutionSection = ({ onCTAClick }: ProblemSolutionSectionProps) => 
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-brand-gray-dark mb-8">
+          <h2 className="text-4xl md:text-5xl font-regular font-inter text-brand-gray-dark mb-8">
             ¿Espacio limitado o estructura deteriorada?
           </h2>
         </div>
