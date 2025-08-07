@@ -34,33 +34,21 @@ const NavigationMenu = () => {
           <Button
             variant="ghost"
             onClick={() => scrollToSection('benefits')}
-            className={`transition-colors duration-300 ${
-              isScrolled 
-                ? 'text-brand-gray hover:text-brand-blue hover:bg-brand-blue/10' 
-                : 'text-white hover:text-white hover:bg-white/20'
-            }`}
+            className="text-brand-blue hover:text-brand-blue hover:bg-brand-blue/10"
           >
             Beneficios
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection('services')}
-            className={`transition-colors duration-300 ${
-              isScrolled 
-                ? 'text-brand-gray hover:text-brand-blue hover:bg-brand-blue/10' 
-                : 'text-white hover:text-white hover:bg-white/20'
-            }`}
+            className="text-brand-blue hover:text-brand-blue hover:bg-brand-blue/10"
           >
             Productos y Servicios
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection('customers')}
-            className={`transition-colors duration-300 ${
-              isScrolled 
-                ? 'text-brand-gray hover:text-brand-blue hover:bg-brand-blue/10' 
-                : 'text-white hover:text-white hover:bg-white/20'
-            }`}
+            className="text-brand-blue hover:text-brand-blue hover:bg-brand-blue/10"
           >
             Clientes
           </Button>
