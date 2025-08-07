@@ -17,8 +17,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <HeroSection onCTAClick={handleCTAClick} />
       <NavigationMenu />
+      <HeroSection onCTAClick={handleCTAClick} />
       <ProblemSolutionSection onCTAClick={handleCTAClick} />
       <div id="benefits">
         <BenefitsSection onCTAClick={handleCTAClick} />
