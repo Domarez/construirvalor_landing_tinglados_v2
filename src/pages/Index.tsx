@@ -31,8 +31,6 @@ const Index = () => {
       </div>
       <WhyChooseUsSection onCTAClick={handleCTAClick} />
       <FAQSection />
-      <FinalCTASection onCTAClick={handleCTAClick} />
-      <ContactForm />
     </div>
   );
 };
