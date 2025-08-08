@@ -1,6 +1,6 @@
 {
   "rewrites": [
     { "source": "/thank-you", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }  // Para todas las rutas en SPA
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
