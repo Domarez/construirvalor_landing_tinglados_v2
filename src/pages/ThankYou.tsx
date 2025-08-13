@@ -45,17 +45,10 @@ const ThankYou = () => {
               Volver al inicio
             </Button>
           </Link>
-          <Button className="w-full sm:w-auto bg-brand-blue hover:bg-brand-blue/90">
-            Ver nuestros proyectos
-          </Button>
+        
         </div>
 
-        <div className="mt-8 pt-6 border-t border-brand-blue/20">
-          <p className="text-sm text-brand-gray">
-            Si tienes alguna consulta urgente, puedes contactarnos directamente al{" "}
-            <span className="font-semibold text-brand-blue">+54 11 1234-5678</span>
-          </p>
-        </div>
+  
       </Card>
     </div>
   );
