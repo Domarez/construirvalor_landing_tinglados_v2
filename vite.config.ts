@@ -6,7 +6,13 @@ export default defineConfig({
   base: '/reformas/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true
+    assetsDir: '',
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: '[name].[ext]',
+        entryFileNames: '[name].js'
+      }
+    }
   }
 });
