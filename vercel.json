@@ -8,18 +8,15 @@
   ],
   "routes": [
     {
-      "src": "/reformas(/?)(.*)",
-      "dest": "/$2",
+      "src": "/assets/(.*)",
+      "dest": "/reformas/assets/$1",
       "headers": {
-        "x-matched-path": "/reformas/$2"
+        "Cache-Control": "public, max-age=31536000, immutable"
       }
     },
     {
-      "src": "/reformas",
-      "dest": "/",
-      "headers": {
-        "x-matched-path": "/reformas"
-      }
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
