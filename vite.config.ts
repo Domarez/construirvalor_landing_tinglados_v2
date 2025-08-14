@@ -6,6 +6,7 @@ export default defineConfig({
   base: '/reformas/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    manifest: true
   }
 });
