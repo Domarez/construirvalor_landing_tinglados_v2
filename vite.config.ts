@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/reformas/',
   build: {
+    outDir: 'dist',
     assetsDir: 'assets'
   }
 });
