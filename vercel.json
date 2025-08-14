@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/thank-you", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/reformas/:path*", "destination": "https://reformasempresas.vercel.app/:path*" }
+    { "source": "/reformas/thank-you", "destination": "https://reformasempresas.vercel.app/index.html" },
   ]
 }
