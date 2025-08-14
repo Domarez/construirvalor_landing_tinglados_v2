@@ -11,15 +11,15 @@
   ],
   "routes": [
     {
-      "src": "/assets/(.*)",
+      "src": "/reformas/assets/(.*)",
       "headers": {
         "Cache-Control": "public, max-age=31536000, immutable"
       },
       "continue": true
     },
     {
-      "src": "/(.*)",
-      "dest": "/",
+      "src": "/reformas(/?)(.*)",
+      "dest": "/$2",
       "headers": {
         "Content-Type": "text/html; charset=utf-8"
       }
