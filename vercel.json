@@ -1,6 +1,25 @@
 {
-  "rewrites": [
-    { "source": "/reformas/:path*", "destination": "https://reformasempresas.vercel.app/:path*" }
-    { "source": "/reformas/thank-you", "destination": "https://reformasempresas.vercel.app/index.html" },
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/reformas(/?)(.*)",
+      "dest": "/$2",
+      "headers": {
+        "x-matched-path": "/reformas/$2"
+      }
+    },
+    {
+      "src": "/reformas",
+      "dest": "/",
+      "headers": {
+        "x-matched-path": "/reformas"
+      }
+    }
   ]
 }
