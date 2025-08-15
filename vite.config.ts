@@ -5,17 +5,6 @@ import path from 'path';
 export default defineConfig({
     base: '/',
     plugins: [react()],
-    build: {
-        outDir: 'dist',
-        emptyOutDir: true,
-        manifest: true,
-        rollupOptions: {
-            output: {
-                entryFileNames: `assets/[name].[hash].js`,
-                assetFileNames: `assets/[name].[hash].[ext]`
-            }
-        }
-    },
     resolve: {
         alias: { '@': path.resolve(__dirname, './src') }
     }
